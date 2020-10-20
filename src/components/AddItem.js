@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import '../App.css';
 
 function AddItem({ addItem }) {
   const inputRef = useRef('');
@@ -16,8 +17,8 @@ function AddItem({ addItem }) {
   return (
     <>
       <form onSubmit={handleOnClick}>
-        <input ref={inputRef} />
-        <button onClick={handleOnClick}>Add</button>
+        <input ref={inputRef} className="inputField" />
+        <button onClick={handleOnClick} className="addButton" >Add</button>
       </form>
     </>
   )
